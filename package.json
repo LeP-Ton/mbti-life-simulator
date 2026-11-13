@@ -5,11 +5,17 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "tsc -b && vite build && node scripts/build-standalone.mjs",
+    "build": "tsc -b && vite build && node --import tsx scripts/build-standalone.mjs",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "tsx --test src/simulation/*.test.ts"
+    "test": "node --import tsx --test src/simulation/*.test.ts src/social/*.test.ts",
+    "experiment": "node --import tsx scripts/experiment.ts"
   },
   "dependencies": {
+    "@stdlib/math-base-special-cos": "0.3.1",
+    "@stdlib/math-base-special-exp": "0.2.5",
+    "@stdlib/math-base-special-ln": "0.2.5",
+    "@stdlib/math-base-special-pow": "0.3.1",
+    "@stdlib/math-base-special-sqrt": "0.2.3",
     "lucide-react": "^0.468.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
