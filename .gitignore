@@ -6,3 +6,4 @@ dist/
 .openai/*.local.*
 .sites-*.tar.gz
 .qa/
+outputs/

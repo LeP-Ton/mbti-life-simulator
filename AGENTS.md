@@ -19,6 +19,7 @@
 
 - `npm install` 安装依赖，`npm run dev` 启动开发服务。
 - `npm run build` 执行 TypeScript 检查与生产构建。
+- 构建同时生成 `outputs/MBTI人生模拟.html`，内联全部运行资源，可双击离线游玩；`outputs/` 不纳入 Git。
 - `npm test` 使用 Node 内置测试运行器与 tsx 验证模拟约束，不额外引入测试框架。
 
 ## 项目检索方法

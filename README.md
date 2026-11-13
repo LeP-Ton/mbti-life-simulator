@@ -13,6 +13,8 @@ npm run dev
 
 打开终端显示的本地地址。使用 `npm run build` 做类型检查与生产构建，使用 `npm run preview` 预览 `dist/`。Windows 若限制 PowerShell 脚本，可使用 `npm.cmd` 替代 `npm`。
 
+构建还会生成 `outputs/MBTI人生模拟.html`，这是内联全部脚本、样式和原创 SVG 的离线版本，可以直接双击游玩。浏览器如果限制文件来源的持久存储，可使用上面的本地服务方式保存档案。
+
 ```bash
 npm test
 ```
